@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="html, css">
+  <meta name="description" content="personal portfolio page">
+  <meta name="author" content="Vince Ybañez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Vince</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="icon" href="images/dev-vince-logo.png" type="image/png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+  <main>
+    <div id="top"></div>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="branding">
+          <img src="images/dev-vince-logo.png" width="100%" alt="Dev Vince Logo" id="logo">
+          <h3>Dev Vince</h3>
+        </div>
+        <mav class="navbar">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </mav>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-text">
+          <h1>Hello, I'm <span class="my-name">Vince Ybañez</span>,</h1>
+          <h1>I'm a fullstack web developer,</h1>
+          <div class="links">
+            <a href="#contact">Hire me</a>
+            <a href="">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p><q>If you fail, you can call it version 1</q> - Anonymous</p>
+        <div class="content">
+          <div class="profile-img">
+            <img src="images/vince-ybañez.jpg" width="100%" alt="Vince Ybañez Profile" id="my-photo">
+          </div>
+          <div class="personal-info">
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Name</span>
+                <span class="info-value">Vince Melmar T. Ybañez</span>
+              </li>
+              <li>
+                <span class="info-label">Date of Birth</span>
+                <span class="info-value">November 24, 1999</span>
+              </li>
+              <li>
+                <span class="info-label">Course</span>
+                <span class="info-value">Bachelor of Science in Computer Science</span>
+              </li>
+              <li>
+                <span class="info-label">Address</span>
+                <span class="info-value">Moto Norte, Loon, Bohol</span>
+              </li>
+              <li>
+                <span class="info-label">Email</span>
+                <span class="info-value">vinceybanez5521@gmail.com</span>
+              </li>
+              <li>
+                <span class="info-label">Phone</span>
+                <span class="info-value">+63 9638 735 243</span>
+              </li>
+            </ul>
+            <ul class="hobbies">
+              <li>
+                <i class="fas fa-headphones"></i>
+                <span>Music</span>
+              </li>
+              <li>
+                <i class="fas fa-suitcase-rolling"></i>
+                <span>Travel</span>
+              </li>
+              <li>
+                <i class="fas fa-film"></i>
+                <span>Movie</span>
+              </li>
+              <li>
+                <i class="fas fa-futbol"></i>
+                <span>Sports</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+
+        <div class="projects">
+          <div class="row">
+            <div class="project">
+              <img src="images/wendys-burger-preview.PNG" width="100%" alt="Wendys Burger Preview" class="img-preview">
+              <div class="overlay">
+                <h3 class="project-title">Wendy's Burger</h3>
+                <a href="https://vinceybanez5521.github.io/wendys-burger-repo.github.io/" class="project-btn"
+                  target="_blank">Live
+                  Demo</a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="images/tribute-page-preview.PNG" width="100%" alt="Tribute Page Preview" class="img-preview">
+              <div class="overlay">
+                <h3 class="project-title">Manny Pacquiao Tribute Page</h3>
+                <a href="https://vinceybanez5521.github.io/tribute-page-repo/" class="project-btn" target="_blank">Live
+                  Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="project">
+              <img src="images/survey-form-preview.PNG" width="100%" alt="Survey Form Preview" class="img-preview">
+              <div class="overlay">
+                <h3 class="project-title">Employee Satisfaction Survey</h3>
+                <a href="https://vinceybanez5521.github.io/survey-form/" class="project-btn" target="_blank">Live
+                  Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Have a question or want to work together?</p>
+
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded" id="contact-form">
+          <div class="row">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            </div>
+          </div>
+          <input type="submit" value="Send Message" id="submit-btn">
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-links">
+          <li>
+            <a href="https://web.facebook.com/vinceybanez5521" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/vinceybanez5521" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+        <p>Copyright &copy; 2023 <a href="index.html">Dev Vince</a>. All Rights Reserved</p>
+        <a href="#top" id="top-btn" title="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
